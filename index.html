@@ -542,12 +542,12 @@ table.CodeRay td.code>pre{padding:0}
 <a href="http://www.codelord.net/2015/12/17/angulars-component-what-is-it-good-for/" target="_blank">.component</a> methode.</p>
 </div>
 <div class="paragraph">
-<p>Voor de workshop heb afgezien van een moderne browser (Chrome of Firefox geadviseerd) geen aanvullende software nodig.
+<p>Voor de workshop heb je afgezien van een moderne browser (Chrome of Firefox geadviseerd) geen aanvullende software nodig.
 Dit omdat we alles doen m.b.v. <a href="http://plnkr.co/" target="_blank">Plunker</a> doen, een simple editor voor JavaScript / HTML / CSS
 web apps met ingebouwde (auto-)preview functionaliteit.</p>
 </div>
 <div class="paragraph">
-<p>De applicatie die we gaan moderniseren naar AngularJS 1.5 is "Simple Reddit", een eenvoudige reddit kloon die:</p>
+<p>De applicatie die we gaan moderniseren naar AngularJS 1.5 is "Simple Reddit", een eenvoudige Reddit kloon die:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -594,23 +594,23 @@ met Plunker.</p>
 van de bestanden is er altijd 1 geselecteerd.</p>
 </li>
 <li>
-<p>Een panel rechts daarnaast bevat het geselecteerd bestand geopend in een editor.</p>
+<p>Een panel rechts daarnaast bevat het geselecteerde bestand geopend in een editor.</p>
 </li>
 <li>
-<p>En weer rechts waarvan vind je een preview van web app;
+<p>En weer rechts daarvan vind je een preview van web app;
 deze preview wordt bij wijziging continu in de editor bijgewerkt.</p>
 </li>
 <li>
-<p>Uiterste rechts staat een vertikale toolbar;
+<p>Uiterst rechts staat een verticale toolbar;
 standaard is het "oog" geselecteerd wat aangeeft dat de preview mode actief is.
-Door hierop te klikken kunnen je de preview mode deswewenst uit- en -inschakelen.</p>
+Door hierop te klikken kunnen je de preview mode desgewenst uit- en -inschakelen.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
 <p>Daarnaast staan er links bovenin de pagina nog wat relevante knoppen.
-Hierin staat op dit moment de knoppen "Fork", "New" en "Stop".
-Door op "Stop" te drukken kun je net al bij het "oog" de preview mode uitschakelen en zal deze wijzigen in "Run" wat
+Hierin staan op dit moment de knoppen "Fork", "New" en "Stop".
+Door op "Stop" te drukken kun je net als bij het "oog" de preview mode uitschakelen en zal deze wijzigen in "Run" wat
 je de mogelijkheid geeft om de preview weer te herstellen.</p>
 </div>
 <div class="admonitionblock note">
@@ -701,7 +701,7 @@ score getoond wordt van een Artikel inclusief de mogelijkheid tot "up"- of "down
 <div class="ulist">
 <ul>
 <li>
-<p>dat deze nog gebruikt van losse (view-loze) controllers</p>
+<p>dat deze nog gebruik maakt van losse (view-loze) controllers</p>
 </li>
 <li>
 <p>dat <code>$scope</code> wordt gebruikt als glue tussen de controllers en de views.
@@ -741,7 +741,7 @@ Daarnaast gebruiken van "strict mode" doordat we overal als eerste statement <co
 <p>Voordat we de upgrade naar versie 1.5 van AngularJS doen gaan we eerst een "Fork" doen van de Plunker.<br>
 Druk op "Fork" in de toolbar (naast de "New" knop); het adres zal nu wijzigen in je eigen persoonlijke unieke URL.<br>
 Zodra je nu een wijziging maakt (bijv. spatie toevoegen in de "index.html") dan zal een "Save" button verschijnen
-en kan je gemaakte wijzigen opslaan en op een later moment (als je de URL bewaart of in een tab open laat staan)
+en kun je gemaakte wijzigen opslaan en op een later moment (als je de URL bewaart of in een tab open laat staan)
 eraan verder werken.</p>
 </div>
 <div class="paragraph">
@@ -757,7 +757,7 @@ Zoek de regel met <code>&lt;script src="https://code.angularjs.org/1.0.8/angular
 de laatste versie van 1.5.x.</p>
 </div>
 <div class="paragraph">
-<p>Klik in de vertikale toolbar, uiterste rechts, in Plunker op het "boek" icoon (gepositioneerd onder het "oog" icoon).<br>
+<p>Klik in de verticale toolbar, uiterste rechts, in Plunker op het "boek" icoon (gepositioneerd onder het "oog" icoon).<br>
 De preview wordt nu vervangen door informatie over de gebruikte packages. Klik nu op de rode "1" achter "Search packages&#8230;&#8203;".<br>
 Vervolgens zie je dan dat versie van Angular 1.0.8 "out of date" is, upgrade naar 1.5.x door op de groene knop "Update to 1.5." te drukken.<br>
 De script tag wordt nu bijgewerkt en nu kunnen we daadwerkelijk ook 1.5 features gaan gebruiken.</p>
@@ -785,7 +785,7 @@ component.</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>Open nu "add-article.component.js" (die eerder nog "add-article.controller.js" hete).</p>
+<p>Open nu "add-article.component.js" (die eerder nog "add-article.controller.js" heette).</p>
 </div>
 <div class="paragraph">
 <p>Wijzig de regel met</p>
@@ -815,24 +815,24 @@ component.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>door een definieren van een output-binding "onAddArticle" kan nu de gebruiker van dit component zelf bepalen wat er moet gebeuren na een "submit" van de form. Hetgeen een hele verbetering is ten opzichte van de
+<p>door het definiëren van een output-binding "onAddArticle" kan nu de gebruiker van dit component zelf bepalen wat er moet gebeuren na een "submit" van de form. Hetgeen een hele verbetering is ten opzichte van de
 expliciete <code>$scope.$parent.addArticle($scope.newTitle, $scope.newLink)</code> van eerst.</p>
 </li>
 <li>
 <p>het component bepaalt zelf zijn HTML template in plaats van dat de HTML template d.m.v. <code>ng-controller</code> bepaald  welke
 controller er gebruik moet worden. In de praktijk zijn HTML template en bijbehorende (in dit geval component)
-controller toch altijd tight-coupled en nu is tenminste vanuit de JavaScript code duidelijke werke template er wordt
+controller toch altijd tight-coupled en nu is tenminste vanuit de JavaScript code duidelijke welke template er wordt
 gebruikt.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>Nu moeten de we <code>RedditAddArticleComponentController</code> constructor function aanpassen:</p>
+<p>Nu moeten de we <code>RedditAddArticleComponentController</code> constructor functie aanpassen:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>verwijder het <code>$scope</code> argument van de function</p>
+<p>verwijder het <code>$scope</code> argument van de functie</p>
 </li>
 <li>
 <p>voeg als eerste regel de volgende statement toe gevolgd door een wit regel:<br>
@@ -927,7 +927,7 @@ artikel en gaan we nu met "article.html" en "article.controller.js" aan de slag.
 </ul>
 </div>
 <div class="paragraph">
-<p>Open nu "article.component.js" (die eerder nog "article.controller.js" heete).</p>
+<p>Open nu "article.component.js" (die eerder nog "article.controller.js" heette).</p>
 </div>
 <div class="paragraph">
 <p>Wijzig de regel met</p>
@@ -958,10 +958,10 @@ artikel en gaan we nu met "article.html" en "article.controller.js" aan de slag.
 <div class="ulist">
 <ul>
 <li>
-<p>we gebruiken nu een one-way input-binding "article" inplaats deze te gebruiken van een inherited parent scope;
+<p>we gebruiken nu een one-way input-binding "article" in plaats deze te gebruiken van een inherited parent scope;
 om duidelijk in de HTML zichtbaar te maken dat we hier als attribuut waarde een AngularJS expressie verwachten
 (i.p.v. een fixed string waarde) gebruiken we i.p.v. <code>article</code> de attribuut naam <code>bind-article</code>. Voor meer info over
-het waarom zie mij blog post
+het waarom zie mijn blog post
 <a href="http://blog.jdriven.com/2016/04/grasping-angularjs-1_5-directive-bindings-by-learning-from-angular-2/" target="_blank">hierover</a>.</p>
 </li>
 <li>
@@ -971,12 +971,12 @@ controller er gebruik moet worden.</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>Nu moeten de we <code>RedditAddArticleController</code> constructor function aanpassen:</p>
+<p>Nu moeten de we <code>RedditAddArticleController</code> constructor functie aanpassen:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>verwijder het <code>$scope</code> argument van de function</p>
+<p>verwijder het <code>$scope</code> argument van de functie</p>
 </li>
 </ul>
 </div>
@@ -1041,25 +1041,25 @@ Voor de (one-way) input-only "article" binding hebben we nu de requirement op "a
 deze gebruiken van de inherited parent scope.</p>
 </div>
 <div class="paragraph">
-<p>Desondanks is er ruimte voor verbetering die aan jullie zelf laat als oefening:</p>
+<p>Desondanks is er ruimte voor verbetering die ik aan jullie zelf laat als oefening:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>in plaats van een Article instantie meer te geven, zouden we er ook voor kunnen kiezen om de "title", "link" en
+<p>in plaats van een Article instantie mee te geven, zouden we er ook voor kunnen kiezen om de "title", "link" en
 "votes" als losse input-only bindings mee te geven.</p>
 </li>
 <li>
 <p>door output-only "onVoteUp" en "onVoteDown" bindings zouden we ook het aanroepen van "voteUp" en "voteDown" op
 Article buiten de "redditArticle" component kunnen plaatsen;
 in de aanroepende HTML zou dan een methode van de RedditAppController (of beter nog van de "redditApp" component)
-kunnen worden aangeroepen die vervolgens de daadwerkelijke "voteUp" en "voteDown" doet op Artikel.</p>
+kunnen worden aangeroepen die vervolgens de daadwerkelijke "voteUp" en "voteDown" doet op Article.</p>
 </li>
 <li>
 <p>in Article staat de "domain" methode in de HTML template van "redditArticle" component wordt gebruik om tussen
 haakjes (in grijze tekst) de host name van de link te tonen.
 op dit moment wordt de "domain" methode enkel gebruikt door de "redditArticle" component.<br>
-Misschien is het wel beter als we deze (presentatie) logica verplaatsten naar binnen het component?</p>
+Misschien is het wel beter als we deze (presentatie) logica verplaatsen naar binnen het component?</p>
 </li>
 </ul>
 </div>
@@ -1076,8 +1076,8 @@ enthousiast heb kunnen maken voor components.</p>
 <p>Mocht niet alles gelukt zijn dan vind je <a href="https://plnkr.co/edit/iqhWqElT78wM75EgPGI8" target="_blank">hier</a> de oplossing van de workshop.</p>
 </div>
 <div class="paragraph">
-<p>Mocht je geinteresseerd zijn? Eigenlijk in de migratie naar componenten nog niet helemaal af ;-)
-De "app.controller.js" en bijbehorende "app.html" zo nog kunnen worden omgevormd naar een "redditApp" component.
+<p>Mocht je geïnteresseerd zijn? Eigenlijk in de migratie naar componenten nog niet helemaal af ;-)
+De "app.controller.js" en bijbehorende "app.html" kan nog worden omgevormd naar een "redditApp" component.
 Dit is een zogenaamd "app"-component zonder enige bindings.</p>
 </div>
 <div class="paragraph">
