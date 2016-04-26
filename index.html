@@ -804,7 +804,7 @@ component.</p>
     bindings: {
         onAddArticle: '&amp;'
     },
-    templateUrl: 'add-article.component.html',
+    templateUrl: 'add-article.html',
     controller: RedditAddArticleController
 });</pre>
 </div>
@@ -883,7 +883,7 @@ object bestaande uit "title" en "link" mee.</p>
 <p>wijzig <code>ng-model="newLink"</code> in <code>ng-model="$ctrl.newLink"</code></p>
 </li>
 <li>
-<p>wijzig <code>ng-click="addArticle(newTitle, newLink)"</code> in <code>ng-click="$ctrl.addArticle()"</code></p>
+<p>wijzig <code>ng-click="addArticle()"</code> in <code>ng-click="$ctrl.addArticle()"</code></p>
 </li>
 </ul>
 </div>
@@ -896,7 +896,7 @@ in<br></p>
 <div class="listingblock">
 <div class="content">
 <pre>&lt;reddit-add-article
-    on-add-article="$ctrl.addArticle($event.title, $event.link)"&gt;
+    on-add-article="addArticle($event.title, $event.link)"&gt;
 &lt;/reddit-add-article&gt;</pre>
 </div>
 </div>
@@ -946,9 +946,9 @@ artikel en gaan we nu met "article.html" en "article.controller.js" aan de slag.
      bindings: {
          article: '&lt;bindArticle',
      },
-     templateUrl: 'article.component.html',
+     templateUrl: 'article.html',
 
-     controller: RedditArticleComponentController
+     controller: RedditArticleController
 });</pre>
 </div>
 </div>
